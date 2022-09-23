@@ -1,0 +1,23 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const skills = await Astro.glob('./skills/*.md');
+---
+
+<Layout title="Compétences">
+	<div>
+		<h1>Compétences</h1>
+		<div class="terminal-timeline">
+			{skills.map((skill) =>
+				<div class="terminal-card">
+					<header>
+            <a href={skill.url}>{skill.frontmatter.title}</a>
+          </header>
+					<div>{skill.frontmatter.description}</div>
+				</div>
+			)}
+		</div>
+	</div>
+</Layout>
+
+

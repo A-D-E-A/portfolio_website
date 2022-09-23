@@ -1,0 +1,23 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const projects = await Astro.glob('./projects/*.md');
+---
+
+<Layout title="Projets">
+	<div>
+		<h1>Projets</h1>
+		<div class="terminal-timeline">
+			{projects.map((project) =>
+				<div class="terminal-card">
+					<header>
+            <a href={project.url}>{project.frontmatter.title}</a>
+          </header>
+					<div>{project.frontmatter.description}</div>
+				</div>
+			)}
+		</div>
+	</div>
+</Layout>
+
+
