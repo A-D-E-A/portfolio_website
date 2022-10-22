@@ -1,0 +1,20 @@
+BEGIN:VCARD
+VERSION:4.0
+CLASS:public
+KIND:individual
+FN:Adam Ambrosino
+N:Ambrosino;Adam;Dimitry,Enzo;
+GENDER:M;Homme
+LANG;PREF=1:fr;
+LANG;PREF=2:en;
+PHOTO;MEDIATYPE=image/png:https://adam-ambrosino.tk/assets/ADAM_AMBROSINO.png
+EMAIL:adam.d.e.ambrosino@gmail.com
+TZ:Europe/Paris
+ORG:Aberia;Développement
+ROLE:Développeur
+TITLE:Ingénieur Logiciel
+ADR;TYPE=work;PREF=1;LABEL="229 Rue Alphonse Beau de Rochas, 34500 Béziers, France":;;229 Rue Alphonse Beau de Rochas;Béziers;Hérault;34420;France
+REV:20221022T181943Z
+SOURCE:https://adam-ambrosino.tk/assets/Adam_Ambrosino.vcf
+URL:https://adam-ambrosino.tk/
+END:VCARD

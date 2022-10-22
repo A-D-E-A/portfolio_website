@@ -98,7 +98,7 @@ Pour Aberia, c'est un atout qui permet de se démarquer de la concurrence en off
 Pour les clients, c'est la possibilité de mieux gérer une équipe et de mieux comprendre l'activité de leur centre d'appel.
 
 <figure>
-  <img src="https://adam-ambrosino.tk/assets/liveboard-preview.png" alt="Capture d'écran d'un liveboard">
+  <img src="/assets/liveboard-preview.png" alt="Capture d'écran d'un liveboard">
   <figcaption>Capture d'écran d'un liveboard en fonctionnement (données censurées).</figcaption>
 </figure>
 
@@ -122,10 +122,10 @@ Je ressors grandi de ces projets car j'ai toujours essayé d'améliorer la struc
 
 # Compétences
 
-- [(Vanilla) Javascript](https://adam-ambrosino.tk/skill/javascript)
-- [PHP](https://adam-ambrosino.tk/skill/php)
-- [Docker](https://adam-ambrosino.tk/skill/docker)
-- [Gitlab CI](https://adam-ambrosino.tk/skill/gitlab-ci)
-- [Gestion de réunions](https://adam-ambrosino.tk/skill/meetings)
-- [Gestion de tickets](https://adam-ambrosino.tk/skill/tickets)
+- [(Vanilla) Javascript](/skill/javascript)
+- [PHP](/skill/php)
+- [Docker](/skill/docker)
+- [Gitlab CI](/skill/gitlab-ci)
+- [Gestion de réunions](/skill/meetings)
+- [Gestion de tickets](/skill/tickets)
 

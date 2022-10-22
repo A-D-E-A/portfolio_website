@@ -3,7 +3,7 @@ export interface Props {
 	title: string;
 }
 
-const { title } = Astro.props;
+const { title, frontmatter } = Astro.props;
 ---
 
 <!DOCTYPE html>
@@ -11,10 +11,22 @@ const { title } = Astro.props;
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
+    <base href="/172.30.176.119:3000/"/>
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<link rel="stylesheet" href="https://unpkg.com/terminal.css@0.7.2/dist/terminal.min.css" />
 		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
+    <meta property="og:title" content="Portfolio d'Adam Ambrosino" />
+    <meta property="og:site_name" content="Portfolio d'Adam Ambrosino" />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="https://adam-ambrosino.tk/assets/ADAM_AMBROSINO.png" />
+    <meta property="og:image:alt" content="Adam Ambrosino, de face, sur fond blanc" />
+    <meta property="og:url" content="https://adam-ambrosino.tk/" />
+    <meta property="og:locale" content="fr_FR" />
+    <meta name="twitter:title" content="Portfolio d'Adam Ambrosino" />
+    <meta name="twitter:url" content="https://adam-ambrosino.tk/" />
+    <meta name="twitter:image:src" content="https://adam-ambrosino.tk/" />
+    <meta name="twitter:image:alt" content="Adam Ambrosino, de face, sur fond blanc" />
+		<title>{title ?? frontmatter.title}</title>
 	</head>
 	<style>
   :root {
@@ -54,12 +66,14 @@ const { title } = Astro.props;
 		<div id="navbar">
       <div class="terminal-nav">
         <div class="logo terminal-prompt">
-          <a href="#">Adam Ambrosino</a>
+          <a href="/">Adam Ambrosino</a>
         </div>
         <nav class="terminal-menu">
           <ul>
             <li><a href="/projects">Projets</a></li>
             <li><a href="/skills">Compétences</a></li>
+            <li><a href="/background">Parcours</a></li>
+            <li><a href="/contact">Contact</a></li>
           </ul>
         </nav>
       </div>
