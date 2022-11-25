@@ -2,7 +2,7 @@
 layout: ../../layouts/Layout.astro
 title: MiCC GUI
 by: Aberia
-clients: ["Aberia", "Mutac", "Mutuelle du Rempart", "Yelloh", "Capa"]
+clients: ["Aberia", "Mutuelle Mutac", "Mutuelle du Rempart", "Yelloh Village", "Capa", "Echelle Européenne", "Université de Montpellier", "Groupe GRIM"]
 description: Nous avons construit un panneau de contrôle interactif pour gérer votre centre d'appel.
 tags:
   - design
@@ -10,13 +10,13 @@ tags:
   - call-center
 ---
 
-# Présentation
+# [Présentation](#presentation)
 
 **MiCC GUI** est la première plateforme développée par Aberia permettant de gérer visuellement et simplement un centre d'appel. Du renvoi d'appel à la gestion de calendriers, en passant par les fermetures exceptionnelles, tout est paramétrable avec un module correspondant à chaque fonctionnalité demandée par le client.
 
 <hr>
 
-# Contexte
+# [Contexte](#context)
 
 Lorsque l'on passe un appel téléphonique, de nombreux éléments rentrent en jeu :
 - L'appel est renvoyé sur le centre d'appel de l'entreprise;
@@ -31,7 +31,7 @@ Il est complexe de gérer chaque élément avec une grande précision, c'est pou
 
 <hr>
 
-# Étapes
+# [Étapes](#steps)
 
 Premièrement, Aberia a commandé une plateforme web développée par [Ad'on Communication](https://www.ad-on.fr/) sous [Wordpress](https://wordpress.org). La plateforme proposa alors une interface graphique soignée avec des fonctionnalités rangées dans un menu.
 
@@ -43,7 +43,7 @@ Pour envoyer des fichiers audio, j'ai programmé des **scripts shell** qui se co
 
 <hr>
 
-# Acteurs principaux
+# [Acteurs principaux](#actors)
 
 - Alexandre Allies : Chef de projet (pour certains déploiements)
 - Vincent Jacquet : Chef de projet (pour les autres déploiements)
@@ -53,7 +53,7 @@ Pour envoyer des fichiers audio, j'ai programmé des **scripts shell** qui se co
 
 <hr>
 
-# Résultats
+# [Résultats](#results)
 
 Pour moi, ce projet a été l'occasion de travailler sur des technologies qui ne sont pas mon fort, et d'apprendre à faire de la maintenance technique sur du code non documenté. Ces points sont très importants dans ce domaine et c'est une des raisons qui me pousse à être fier de ce projet. Je n'ai pas toujours aimé travailler sur ce projet, mais la gratification donnée par ma montée en compténce en valait la peine.
 
@@ -65,7 +65,7 @@ Pour les clients, c'est la possibilité d'avoir la main sur leur centre d'appel 
 
 <hr>
 
-# Avenir
+# [Avenir](#future)
 
 Le **MiCC GUI** est encore maintenu chez plusieurs clients. Cependant, les soucis apportés par la plateforme **Wordpress** et son incompatibilité avec nos besoins nous pousse à revoir le projet. 
 
@@ -73,7 +73,7 @@ Nous sommes actuellement en phase de refonte totale du projet afin d'éliminer c
 
 <hr>
 
-# Critique
+# [Critique](#criticism)
 
 Ayant développés ce projet seul en grande partie, si on ommet la plateforme de base, j'ai vu beaucoup de défauts et d'améliorations possibles. Une partie vient de mon manque d'expérience avec le langage et le framework, une autre vient de ces derniers qui sont inadaptés à nos besoins. Pour imager, faire cette plateforme en Wordpress c'est comme planter des clous avec un tournevis : c'est possible, mais le choix n'est pas forcément judicieux.
 
@@ -81,8 +81,8 @@ Je ressors grandi de cette expérience qui m'a montré mes faiblesses et fait pr
 
 <hr>
 
-# Compétences
+# [Compétences](#skills)
 
-- [PHP](/skill/php)
-- [Docker](/skill/docker)
-- [Gestion de tickets](/skill/tickets)
+- [PHP](/skills/php)
+- [Docker](/skills/docker)
+- [Gestion de tickets](/skills/tickets)

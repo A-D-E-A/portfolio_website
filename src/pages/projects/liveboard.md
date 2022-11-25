@@ -10,13 +10,13 @@ tags:
   - call-center
 ---
 
-# Présentation
+# [Présentation](#presentation)
 
 **Liveboard** est le nom d'un ensemble de solutions vendues par Aberia. Ces solutions offrent une vision pseudo-temps réel des données d'un centre d'appel. Plusieurs produits de cette famille ont été réalisés afin de répondre à des besoins précis demandant de revoir le style et parfois l'architecture. Cette page mélange les informations de différents projets sous ce nom.
 
 <hr>
 
-# Contexte
+# [Contexte](#context)
 
 Plusieurs clients ont demandé à Aberia d'avoir une visibilité en temps réelle sur leurs données. Des status d'agents du call-center au statistiques de ventes, ce large pannel de données permet une gestion et un management plus efficace. Ces données pourtant essentielles sont difficiles d'accès. En effet, il faut parfois croiser de multiples sources de données : des bases de données [SQL Server](https://www.microsoft.com/en-us/sql-server), une base de données [MySQL](https://www.mysql.com), des APIs REST et une API [GraphQL](https://graphql.org).
 
@@ -24,7 +24,7 @@ De plus, il faut la certitude que les données soient exactes. Manquer deux appe
 
 <hr>
 
-# Étapes
+# [Étapes](#steps)
 
 Ce que j'ai fait, et refait à chaque itération du projet, c'est de poser une structure stable qui permette d'ajouter ces données. Cette étape est la plus importante, car avec toutes les demandes supplémentaires qui se dessinent, je vois ce qui aurait pu être amélioré pour me simplifier le développement. La version la plus évoluée consiste à créer une fonction pour chaque "table" de données (une pour les agents, une pour les appels en attente, etc.) à l'aide de closures (fonctions internes connaissant leur contexte), et les passer à un objet qui traite les requêtes en fonction des paramètres de l'objet.
 
@@ -66,7 +66,7 @@ function fetch_data($data_obj) {
 Mais faire tous les appels à chaque fois peut-être long et consommer beaucoup de ressources, surtout si plusieurs ordinateurs sont connectés en même temps. Donc je n'ai pas directement connecté ce serveur Wordpress aux Apis : j'ai décomposé le tout en plusieurs microservices conteneurisés avec [Docker](https://www.docker.com) ; développés en [Node.js](https://nodejs.org), [PHP](https://www.php.net) ou [Bash](https://www.gnu.org/software/bash/) pour faire toutes ces requêtes ; stocké les réponses temporairement (moins de 5 secondes pour des données critiques, quelques minutes pour des statistiques complexes telles que le CA mensuel) dans un cache [Redis](https://redis.io). Le serveur Wordpress récupère les données de ces services et retourne la réponse au client sous forme de Server-Sent Event ! Le client peut se connecter avec un **Event Listener** pour récupérer automatiquement les mises à jour depuis le serveur sans augmenter drastiquement la charge réseau à chaque utilisateur.
 
 <figure>
-  <img src="https://adam-ambrosino.tk/assets/liveboard-structure.svg" alt="Diagramme de l'infrastructure">
+  <img src="/assets/liveboard-structure.svg" alt="Diagramme de l'infrastructure">
   <figcaption>Diagramme Plantuml de l'insfrastructure conteneurisée d'un des liveboard.</figcaption>
 </figure>
 
@@ -80,7 +80,7 @@ La suite, c'est les retouches graphiques, le positionnement, les couleurs. Sur c
 
 <hr>
 
-# Acteurs principaux
+# [Acteurs principaux](#actors)
 
 - Alexandre Allies : Chef de projet
 - Adam Ambrosino : Développeur / designer
@@ -89,7 +89,7 @@ La suite, c'est les retouches graphiques, le positionnement, les couleurs. Sur c
 
 <hr>
 
-# Résultats
+# [Résultats](#results)
 
 Pour moi, ces projets ont été l'occasion d'apprendre à améliorer l'architecture de mes solutions.
 
@@ -104,7 +104,7 @@ Pour les clients, c'est la possibilité de mieux gérer une équipe et de mieux 
 
 <hr>
 
-# Avenir
+# [Avenir](#future)
 
 Le **Liveboard** est encore produit et maintenu chez plusieurs clients. De nouveaux projets ont étés commandés et il ne semble pas y avoir de ralentissement sur les mois qui viennent.
 
@@ -112,7 +112,7 @@ Lorsque le temps le permettra, le projet devra être refait entièrement, en esp
 
 <hr>
 
-# Critique
+# [Critique](#criticism)
 
 Ayant développés tous ces liveboards seul dans leur intégralité (certaines sources de données ont été gérées par l'administrateur, mais je reste le seul développeur), j'ai vu tout ce qui aurait pu être amélioré.
 
@@ -120,12 +120,12 @@ Je ressors grandi de ces projets car j'ai toujours essayé d'améliorer la struc
 
 <hr>
 
-# Compétences
+# [Compétences](#skills)
 
-- [(Vanilla) Javascript](/skill/javascript)
-- [PHP](/skill/php)
-- [Docker](/skill/docker)
-- [Gitlab CI](/skill/gitlab-ci)
-- [Gestion de réunions](/skill/meetings)
-- [Gestion de tickets](/skill/tickets)
+- [(Vanilla) Javascript](/skills/javascript)
+- [PHP](/skills/php)
+- [Docker](/skills/docker)
+- [Gitlab CI](/skills/gitlab-ci)
+- [Gestion de réunions](/skills/meetings)
+- [Gestion de tickets](/skills/tickets)
 

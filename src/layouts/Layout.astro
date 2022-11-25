@@ -7,25 +7,25 @@ const { title, frontmatter } = Astro.props;
 ---
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
-    <base href="/172.30.176.119:3000/"/>
+    <base href="https://adam-ambrosino.tk/"/>
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<link rel="stylesheet" href="https://unpkg.com/terminal.css@0.7.2/dist/terminal.min.css" />
 		<meta name="generator" content={Astro.generator} />
     <meta property="og:title" content="Portfolio d'Adam Ambrosino" />
     <meta property="og:site_name" content="Portfolio d'Adam Ambrosino" />
     <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://adam-ambrosino.tk/assets/ADAM_AMBROSINO.png" />
-    <meta property="og:image:alt" content="Adam Ambrosino, de face, sur fond blanc" />
+    <meta property="og:image" content="https://adam-ambrosino.tk/assets/Adam_AMBROSINO.jpg" />
+    <meta property="og:image:alt" content="Adam Ambrosino, vu de face" />
     <meta property="og:url" content="https://adam-ambrosino.tk/" />
     <meta property="og:locale" content="fr_FR" />
     <meta name="twitter:title" content="Portfolio d'Adam Ambrosino" />
     <meta name="twitter:url" content="https://adam-ambrosino.tk/" />
-    <meta name="twitter:image:src" content="https://adam-ambrosino.tk/" />
-    <meta name="twitter:image:alt" content="Adam Ambrosino, de face, sur fond blanc" />
+    <meta name="twitter:image:src" content="https://adam-ambrosino.tk/assets/Adam_AMBROSINO.jpg" />
+    <meta name="twitter:image:alt" content="Adam Ambrosino, vu de face" />
 		<title>{title ?? frontmatter.title}</title>
 	</head>
 	<style>
@@ -65,7 +65,7 @@ const { title, frontmatter } = Astro.props;
 	<body class="terminal">
 		<div id="navbar">
       <div class="terminal-nav">
-        <div class="logo terminal-prompt">
+        <div class="logo terminal-prompt" style="overflow:visible">
           <a href="/">Adam Ambrosino</a>
         </div>
         <nav class="terminal-menu">
